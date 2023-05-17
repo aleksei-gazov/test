@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+
+
+  .chatFile {
+    width: 35vw;
+  }
+  .chat {
+    width: 65vw;
+    display: flex;
+  }
+}

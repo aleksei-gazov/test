@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 2px dodgerblue;
+  border-radius: 5px;
+  width: 500px;
+  height: 120px;
+  margin-left: 18px;
+
+  .info {
+    width: 70%;
+
+    .nameTime {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+
+      .name {
+
+      }
+
+      .time {
+        height: 20px;
+
+      }
+    }
+    .message {
+      height: 40px;
+
+    }
+  }
+}

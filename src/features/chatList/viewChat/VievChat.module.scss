@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #E5E5E5;
+  width: 100%;
+
+  .messages {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+
+    .mainMessage {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .userMessage {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
