@@ -411,3 +411,79 @@ text: [
 
 
 
+
+    export const vacancy = {
+buttonOpen: ‘ПАДРАБЯЗНЕЙ’,
+buttonCloset: ‘ЗГАРНУТЬ’,
+contacts: ‘Кантактны тэлефон’,
+salary: ‘Зарплата:’
+responsibilities: ‘Патрабаванні’,
+addInfo: ‘Дадатковая інфармацыя’,
+}
+
+export type VacanciesType = {
+nameVacancy: string
+salary: string
+contacts: string
+responsibilitiesText: string[]
+addInfoText: string[]
+}
+
+
+
+type PropsType = {
+oneVacansy: VacanciesType
+}
+
+export const Vacancy = ({oneVacansy }: PropsType): JSX.Element=> {
+const [isOpen, setIsOpen] = useState(false)
+
+const openDetais = () => {
+setIsOpen(!isOpen)
+}
+
+return (
+<div>
+
+<div>
+<h2>
+{ oneVacansy. nameVacancy }
+</h2>
+<p>
+{ vacancy.salary }: { oneVacansy.salary }:
+</p>
+</div>
+{isOpen && <div>
+<div>
+<h3 >
+{ vacancy.contacts }
+</ h3>
+<p>
+Phone or text
+</p>
+</div>
+
+
+</div>}
+<button onClick={openDetais}>{ isOpen ?  vacancy.buttonOpen :  vacancy.buttonCloset } </button>
+</div>
+
+)
+
+}
+
+
+
+
+
+
+
+<div></div>
+
+
+
+
+
+
+
+    
